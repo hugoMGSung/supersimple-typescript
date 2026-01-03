@@ -1,0 +1,21 @@
+{
+  "name": "supersimple-typescript",
+  "version": "1.0.0",
+  "description": "초간단 타입스크립트 리포지토리",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoMGSung/supersimple-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hugoMGSung/supersimple-typescript/issues"
+  },
+  "homepage": "https://github.com/hugoMGSung/supersimple-typescript#readme"
+}

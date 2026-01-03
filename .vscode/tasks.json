@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "tsc: watch",
+      "type": "shell",
+      "command": "npx tsc --watch",
+      "problemMatcher": "$tsc",
+      "isBackground": true
+    }
+  ]
+}
