@@ -206,8 +206,9 @@ npx tsc --watch
 
 ![alt text](image-1.png)
 
+## 기본 문법
 
-## Step 01
+### Step 01
 
 - ts라는 확장자로 코드 작성
 - tsc로 .ts를 실행하면 .js 생성됨
@@ -219,3 +220,52 @@ npx tsc --watch
 Hello Typescript!
 ```
 
+### Step 02
+- https://www.typescriptlang.org/ 에서도 테스트 해  볼것
+- 타입스크립트란 자바스크립트의 단점을 보완한 스크립트 언어(!)
+    - 타입 정의 가능
+    - 인터페이스, 클래스 문법제공
+    - 세이프 코드 지원
+    - 제네릭 타입 정의
+
+- 엄격한 Null 체크 기능 명령어
+
+```bash
+tsc --strictNullChecks index.ts
+```
+
+### Step 03
+
+```script
+// 변수 선언
+let ceo = 'Steve';
+let ceo: string = 'Steve';
+
+// 타입 에러
+let age: number = '30';
+```
+
+![alt text](image-2.png)
+
+```script
+// 변수 범위
+function calculate(isSum: boolean) {
+    let first = 50;
+
+    if (isSum) {
+        let sum = first + 50;
+        return sum;
+    }
+
+    return sum; // error TS2304
+}
+
+// 상수 에러
+const sum: number = 100;
+sum - 99;   // Compile error
+
+// 배열
+const names: string[] = [];
+names.push('Eleven');
+names.push(11); // ts2345 Error
+```
